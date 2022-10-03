@@ -3,4 +3,11 @@ src = 'src'
 out = 'out'
 libs = ['lib']
 
+[rpc_endpoints]
+goerli = "${GOERLI_RPC_URL}"
+rinkeby = "${RINKEBY_RPC_URL}"
+
+[etherscan]
+rinkeby = { key = "${ETHERSCAN_KEY}" }
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
