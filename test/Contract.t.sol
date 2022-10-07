@@ -27,6 +27,7 @@ contract Contract_test is Test {
 
     function setUp() public {
         _storage = new Storage();
+        vm.label(_storage.one(), "ONE ADDRESS");
     }
 
     function testStorage() public {
